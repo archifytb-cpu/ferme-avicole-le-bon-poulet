@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferme Avicole Le Bon Poulet | Élevage au Burkina Faso</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=DM+Serif+Display&display=swap');
+
+        :root {
+            --bf-red: #EF4444;
+            --bf-green: #059669;
+            --bf-yellow: #FACC15;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .flag-line {
+            height: 6px;
+            background: linear-gradient(to right, var(--bf-red) 33.33%, var(--bf-yellow) 33.33% 66.66%, var(--bf-green) 66.66%);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">BP</div>
+                <span class="font-bold text-xl tracking-tight">Le Bon Poulet</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#propos" class="hover:text-green-600">À propos</a>
+                <a href="#produits" class="hover:text-green-600">Animaux</a>
+                <a href="#contact" class="hover:text-green-600">Contact</a>
+            </div>
+        </div>
+        <div class="flag-line"></div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-gradient text-white pt-40 pb-32">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl mb-6">Élevage d'Excellence au Faso</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-200 font-light">
+                Poulets locaux améliorés et moutons de qualité pour vos cérémonies et élevages.
+            </p>
+
+            <!-- BOUTONS WHATSAPP (Note: Ne fonctionnent pas en prévisualisation restreinte) -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://api.whatsapp.com/send?phone=22657561212" target="_blank" 
+                   class="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition shadow-xl">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    Commander via WhatsApp
+                </a>
+                <a href="tel:+22657561212" class="bg-white text-slate-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 shadow-xl">
+                    <i class="fas fa-phone-alt"></i>
+                    Appeler le +226 57 56 12 12
+                </a>
+            </div>
+            <p class="mt-6 text-xs text-gray-400 italic">Note : Les liens WhatsApp s'ouvriront sur votre téléphone ou ordinateur une fois le site publié.</p>
+        </div>
+    </header>
+
+    <!-- PRODUITS -->
+    <section id="produits" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Produit 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                <div class="h-64 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fas fa-drumstick-bite text-6xl"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-3xl mb-2 font-bold">Poulets Améliorés</h3>
+                    <p class="text-gray-600 mb-6 font-semibold text-xl text-green-600">3 000 F CFA / unité</p>
+                    <p class="text-gray-500 mb-6 leading-relaxed">Poulets sains, vaccinés et élevés avec un suivi rigoureux pour une croissance optimale.</p>
+                    <a href="https://api.whatsapp.com/send?phone=22657561212&text=Bonjour,%20je%20souhaite%20commander%20des%20poulets" target="_blank" class="block w-full text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition">Réserver maintenant</a>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100">
+                <div class="h-64 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fas fa-sheep text-6xl"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-3xl mb-2 font-bold">Moutons de Race</h3>
+                    <p class="text-gray-600 mb-6 font-semibold text-xl text-red-600">Prix à discuter</p>
+                    <p class="text-gray-500 mb-6 leading-relaxed">Spécimens de qualité supérieure pour vos événements, fêtes religieuses ou élevage personnel.</p>
+                    <a href="https://api.whatsapp.com/send?phone=22657561212&text=Bonjour,%20je%20souhaite%20plus%20d'infos%20sur%20les%20moutons" target="_blank" class="block w-full text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition">Contacter la ferme</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SIMPLE -->
+    <footer id="contact" class="bg-white border-t py-12 text-center">
+        <div class="flag-line mb-8 w-32 mx-auto rounded-full"></div>
+        <p class="font-bold text-xl mb-2">Ferme Avicole Le Bon Poulet</p>
+        <p class="text-gray-500 mb-6">Burkina Faso 🇧🇫 | Koudougou - Ouagadougou</p>
+        <p class="text-sm text-gray-400">© 2026 Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+
